@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Hilton</title>
+		<link rel="stylesheet" href="/static/style.css" />
+		<script src="/static/index.js" defer></script>
+		<style>
+			.chat-container {
+				max-height: 400px;
+				overflow-y: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container font-DMsans">
+			<div
+				id="navbar"
+				class="flex bg-slate-50 px-16 py-5 shadow-md justify-between items-center"
+			>
+				<div class="text-3xl font-bold">Hilton</div>
+				<div class="text-xl">
+					<ul>
+						<a href="#chatbot" class="mx-4 hover:text-orange-500">Home</a>
+						<a href="#chatbot" class="mx-4 hover:text-orange-500"
+							>Booking</a
+						>
+						<a href="#chatbot" class="mx-4 hover:text-orange-500"
+							>Contact</a
+						>
+						<a
+							href="#chatbot"
+							class="mx-4 px-5 py-2.5 rounded-md text-white bg-orange-400 hover:bg-orange-500"
+							>Chatbot</a
+						>
+					</ul>
+				</div>
+			</div>
+
+			<div id="hero-section" class="relative">
+				<img
+					src="/static/hotel.jpg"
+					alt=""
+					class="h-[38rem] w-full object-cover brightness-50 relative"
+				/>
+				<div
+					class="absolute flex items-center justify-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-6xl font-bold"
+				>
+					<div>
+						<span
+							style="-webkit-text-stroke: 1px orange"
+							class="text-orange-400"
+						>
+							Discover</span
+						>
+						a World of Refined Comfort<br />
+					</div>
+				</div>
+				<div
+					class="absolute top-[71%] left-[46%] -translate-x-1/2 -translate-y-1/2"
+				>
+					<a
+						href="#chatbot"
+						class="text-xl bg-orange-500 px-8 py-3 rounded-lg text-white hover:bg-orange-600"
+						>Chatbot</a
+					>
+				</div>
+			</div>
+
+			<!-- Chatbot  -->
+			<div id="chatbot">
+				<div
+					class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 mx-8 my-10 rounded-xl pb-10 shadow-md"
+				>
+					<div class="py-8 px-6 flex flex-col items-center">
+						<div class="text-3xl font-bold pb-4 text-white">
+							Chatbot to enhance the user experience
+						</div>
+						<div class="text-xl text-white">
+							Your Personalized Assistant for a Perfect Stay
+						</div>
+					</div>
+					<div class="max-w-xl mx-auto bg-slate-100 rounded shadow-lg">
+						<div class="chat-container p-4" id="chat-messages"></div>
+						<div class="flex items-center border-t p-2">
+							<input
+								type="text"
+								id="user-input"
+								class="flex-1 py-2 px-4 mr-2 outline-none"
+								placeholder="send a message..."
+							/>
+							<button
+								id="send-button"
+								class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold py-2 px-4 rounded-full"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+									class="w-6 h-6"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
+									/>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Footer section -->
+			<div
+				class="flex justify-center bg-gray-200 border-t border-gray-200 shadow-lg"
+			>
+				<div class="text-lg py-3">
+					Copyright 2023 Hilton. All rights reserved.
+				</div>
+			</div>
+		</div>
+        
+	</body>
+</html>
